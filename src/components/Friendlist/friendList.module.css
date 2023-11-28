@@ -28,11 +28,10 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-
 }
 
 .true {
-    backgrond-color: green;
+    background-color: green;
 }
 
 .false {
