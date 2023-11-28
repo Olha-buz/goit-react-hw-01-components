@@ -1,25 +1,13 @@
 import PropTypes from 'prop-types';
+import css from './transitions.module.css';
 
-const createColor = () => {
-  const color =
-    'rgba(' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    0.2 +
-    ')';
 
-  return color;
-};
 
 export const TransactionHistory = ({ transaction }) => {
     return (
         <table className="transaction-history">
-            <thead>
-                <tr style={{ backgroundColor: createColor() }}>
+            <thead className={css.theadTransition}>
+                <tr>
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
@@ -29,7 +17,7 @@ export const TransactionHistory = ({ transaction }) => {
             <tbody>
                 {transaction.map(({ id, type, amount, currency }) => {
                     return (
-                        <tr key={id} style={{ backgroundColor: createColor() }}>
+                        <tr key={id} className={css.tbodyTr}>
                             <td>{type}</td>
                             <td>{amount}</td>
                             <td>{currency}</td>

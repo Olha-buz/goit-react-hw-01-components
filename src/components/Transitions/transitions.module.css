@@ -1,0 +1,18 @@
+.theadTransition {
+    background-color: #B0A3F8;
+    height: 64px;
+    font-size: 36px;
+
+}
+
+
+.tbodyTr {
+    font-size: 28px;
+    height: 56px;
+    text-align: center;
+    vertical-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #E2DDFF;
+}

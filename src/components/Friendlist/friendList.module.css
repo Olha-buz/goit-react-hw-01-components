@@ -1,0 +1,40 @@
+.friends {
+    width: 512px;
+}
+
+.friendlist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.friends__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 24px;
+    gap: 24px;
+    border-radius: 24px;
+    border: 2px solid #B0A3F8;
+    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.friendstatus {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+}
+
+.true {
+    backgrond-color: green;
+}
+
+.false {
+    background-color: red;
+}
